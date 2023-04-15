@@ -16,7 +16,7 @@ class TaskCreate(TaskBase):
 
 class Task(TaskBase):
     id: int
-    status :str
+    status: str
 
     class Config:
         orm_mode = True
