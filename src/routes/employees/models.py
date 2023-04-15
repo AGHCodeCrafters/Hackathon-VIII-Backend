@@ -8,4 +8,6 @@ class Employee(database.Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, index=True)
     
+    bezoski = Column(Integer, default=0)
+
     tasks = relationship("Task", back_populates="employee")

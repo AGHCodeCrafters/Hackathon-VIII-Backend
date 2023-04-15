@@ -10,6 +10,7 @@ class EmployeeCreate(EmployeeBase):
 
 class Employee(EmployeeBase):
     id: int
+    bezoski : int
 
     class Config:
         orm_mode = True
