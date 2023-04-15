@@ -7,7 +7,7 @@ from ...config import database  # import SessionLocal, engine
 
 database.Base.metadata.create_all(bind=database.engine)
 
-router = APIRouter(tags=["Tasks"])
+router = APIRouter(tags=["Employees"])
 
 
 def get_db():
@@ -37,5 +37,3 @@ def read_employee(employee_id: int, db: Session = Depends(get_db)):
 # @router.post("/items/", response_model=schemas.Item)
 # def create_item(item: schemas.ItemCreate, db: Session = Depends(get_db)):
 #     return crud.create_item(db=db, post=item)
-
-

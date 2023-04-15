@@ -4,7 +4,8 @@ from pydantic import BaseModel
 
 
 class ItemBase(BaseModel):
-    location: Optional[int] = None
+    aisle: Optional[int] = None
+    shelf: Optional[int] = None
     status: str
 
 
