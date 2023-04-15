@@ -1,12 +1,19 @@
 from sqlalchemy.orm import Session
+from sqlalchemy.exc import IntegrityError
+from fastapi.exceptions import HTTPException
+
 from . import models, schemas
 
 
 def create_item(db: Session, item: schemas.ItemCreate):
     db_item = models.Item(**item.dict())
     db.add(db_item)
-    db.commit()
-    db.refresh(db_item)
+    try:
+        db.commit()
+        db.refresh(db_item)
+    except IntegrityError as e:
+        db.rollback()
+        raise HTTPException(status_code=400, detail="Item with this code already exists")
     return db_item
 
 def get_item(db: Session, item_id: int):

@@ -2,6 +2,7 @@ from pydantic import BaseModel
 
 class ItemBase(BaseModel):
     location: str
+    code : int
 
 class ItemCreate(ItemBase):
     pass
