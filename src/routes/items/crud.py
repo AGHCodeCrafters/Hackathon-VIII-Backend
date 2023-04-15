@@ -16,6 +16,8 @@ def create_item(db: Session, item: schemas.ItemCreate):
         raise HTTPException(status_code=400, detail="Item with this code already exists")
     return db_item
 
+
+
 def get_item(db: Session, item_id: int):
     return db.query(models.Item).filter(models.Item.id == item_id).first()
 
