@@ -34,7 +34,7 @@ def read_tasks(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     tasks = crud.get_tasks(db=db, skip=skip, limit=limit)
     return tasks
 
-@router.put("/tasks/{task_id}/complete")
+@router.patch("/tasks/{task_id}/complete")
 def complete_task(task_id: int, db: Session = Depends(get_db)):
     return crud.complete_task(db=db, task_id=task_id)
 
