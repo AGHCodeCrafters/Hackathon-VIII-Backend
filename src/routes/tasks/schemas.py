@@ -8,9 +8,10 @@ class TaskBase(BaseModel):
     employee_id: int
 
     destination_location: str
+    type: str
 
 class TaskCreate(TaskBase):
-    status = "IN_PROGRES"
+    status = "IN_PROGRESS"
 
 
 class Task(TaskBase):

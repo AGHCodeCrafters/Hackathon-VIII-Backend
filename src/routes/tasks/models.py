@@ -16,6 +16,7 @@ class Task(database.Base):
     employee_id = Column(Integer, ForeignKey("employees.id"))
     
     destination_location = Column(String)
+    type = Column(String)
     status = Column(String, default="IN_PROGRESS")
 
 
