@@ -12,18 +12,12 @@ class Task(database.Base):
     __tablename__ = "tasks"
 
     id = Column(Integer, primary_key=True, index=True)
-    employee_id = Column(Integer, ForeignKey("employees.id"))
+
+    item_code = Column(Integer, index=True)
     
-    item_id = Column(Integer, ForeignKey("items.id"))
-    destination_gate = Column(Integer, index=True, nullable=True)
-
-    task_type = Column(String(255), nullable=False, index=True) # IN - OUT
-    pick_gate = Column(Integer, index=True, nullable=True)
-
-    destination_alias = Column(String(255))
-    destination_shelf = Column(String(255))
-
-    status = Column(String(255), nullable=False, default="to-pick")
-
-    employees = relationship("Employee", back_populates="tasks")
-    items = relationship("Item", back_populates="tasks")
+    pickup = Column(String(255), index=True) 
+    destination = Column(String(255), index=True)
+    
+    employee_name = Column(String(255), index=True)
+    
+    status = Column(String(255), nullable=False, default="to-pick") # PENDING - IN PROGRESS - COMPLETE
