@@ -22,7 +22,6 @@ def create_task(task: schemas.TaskBase, db: Session = Depends(get_db)):
     db_task = crud.create_task(db=db, task=task)
     return db_task
 
-# READ
 @router.get("/tasks/{task_id}", response_model=schemas.Task)
 def read_task(task_id: int, db: Session = Depends(get_db)):
     db_task = crud.get_task(db=db, task_id=task_id)
@@ -35,4 +34,7 @@ def read_tasks(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
     tasks = crud.get_tasks(db=db, skip=skip, limit=limit)
     return tasks
 
+@router.put("/tasks/{task_id}/complete")
+def complete_task(task_id: int, db: Session = Depends(get_db)):
+    return crud.complete_task(db=db, task_id=task_id)
 

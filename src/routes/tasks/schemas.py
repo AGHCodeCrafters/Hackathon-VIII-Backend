@@ -1,4 +1,7 @@
 from pydantic import BaseModel
+from ..items import models
+from sqlalchemy.orm import Session
+
 
 class TaskBase(BaseModel):
     item_id: int
@@ -9,6 +12,8 @@ class TaskBase(BaseModel):
 class TaskCreate(TaskBase):
     pass
 
+
+    
 class Task(TaskBase):
     id: int
 
