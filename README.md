@@ -14,7 +14,7 @@ Optima to narzędzie, które pozwala na skuteczne zarządzanie pracą magazynów
 ## A co jeśli nie odpali?
 Wtedy odpal na localhoście
 
-## Odpalanie na localhoście
+## Odpalanie na localhoście:
 1. Sklonuj repozytorium używając komendy `git clone https://github.com/AGHCodeCrafters/Hackathon-VIII-Backend.git`.
 2. Zainstaluj potrzebne paczki komendą `pip install -r requirements.txt`.
 3. Postaw lokalny serwer komendą `uvicorn src.main:app --reload`.
