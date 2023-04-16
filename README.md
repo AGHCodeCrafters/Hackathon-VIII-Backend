@@ -5,7 +5,11 @@
 
 
 # O projekcie: 📜
-Optima to narzędzie, które pozwala na skuteczne zarządzanie pracą magazynów i zwiększenie wydajności pracy pracowników. Oferuje ono szereg funkcjonalności, takich jak optymalne zarządzanie czasem pracy pracowników, dobieranie najkrótszej drogi do wykonania zadań oraz prezentacja magazynu w formie mapy. Pracownik ma możliwość zobaczenia jedynie aktualnie wykonywanego zadania, co zwiększa jego skuteczność. Program ocenia także efektywność czasową pracowników i nagradza ich punktami za dobre wyniki, które mogą być wymienione na nagrody wybrane przez pracodawcę.
+Optima to narzędzie, które pozwala na skuteczne zarządzanie pracą magazynów i zwiększenie wydajności pracy pracowników.
+<br><br>
+Oferuje ono szereg funkcjonalności, takich jak optymalne zarządzanie czasem pracy pracowników, dobieranie najkrótszej drogi do wykonania zadań oraz prezentacja magazynu w formie mapy. Pracownik ma możliwość zobaczenia jedynie aktualnie wykonywanego zadania, co zwiększa jego skuteczność. 
+<br><br>
+Program ocenia także efektywność czasową pracowników i nagradza ich punktami za dobre wyniki, które mogą być wymienione na nagrody wybrane przez pracodawcę.
 
 ## Live app: https://magazyn-backend.onrender.com
 (jeśli odpali, będzie można ją znaleźć pod tym linkie, free-tier nie rozpieszcza ;c )
