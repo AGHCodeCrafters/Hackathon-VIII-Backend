@@ -24,6 +24,6 @@ Wtedy odpal na localhoście
 Swaggerowa dokumentacja dostępna jest pod linkiem ```<host>/docs```
 ![image](https://user-images.githubusercontent.com/65948245/232275228-fd93629f-6347-42bf-9d0c-f898a2dc052e.png)
 
-<p align="center"> 
+<div align="center"> 
 Znalazłeś jakiś błąd? Będziemy wdzięczni, jeśli dasz nam o nim znać ^^
 </p>
