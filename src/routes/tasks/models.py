@@ -18,6 +18,7 @@ class Task(database.Base):
     destination_location = Column(String(255))
     type = Column(String(255))
     status = Column(String(255), default="IN_PROGRESS")
+    bezoski_value = Column(Integer, default=1)
 
 
     employee = relationship("Employee", back_populates="tasks")

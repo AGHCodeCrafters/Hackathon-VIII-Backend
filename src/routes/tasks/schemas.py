@@ -9,6 +9,7 @@ class TaskBase(BaseModel):
 
     destination_location: str
     type: str
+    bezoski_value: int
 
 class TaskCreate(TaskBase):
     status = "IN_PROGRESS"

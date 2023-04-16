@@ -37,7 +37,7 @@ def complete_task(db: Session, task_id: int):
     if not db_item:
         raise HTTPException(status_code=404, detail="Employee not found")
 
-    db_employee.bezoski += 1
+    db_employee.bezoski += db_task.bezoski_value
     db_item.location = db_task.destination_location
     db_task.status = "COMPLETED"
     db.commit()
