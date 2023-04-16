@@ -15,9 +15,9 @@ class Task(database.Base):
     item_id = Column(Integer, ForeignKey("items.id"))
     employee_id = Column(Integer, ForeignKey("employees.id"))
     
-    destination_location = Column(String)
-    type = Column(String)
-    status = Column(String, default="IN_PROGRESS")
+    destination_location = Column(String(255))
+    type = Column(String(255))
+    status = Column(String(255), default="IN_PROGRESS")
 
 
     employee = relationship("Employee", back_populates="tasks")
