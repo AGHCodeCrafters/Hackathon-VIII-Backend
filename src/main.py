@@ -5,9 +5,6 @@ from src.routes.items import items
 from src.routes.tasks import tasks
 from fastapi.middleware.cors import CORSMiddleware
 
-
-
-
 app = FastAPI()
 
 origins = [
